@@ -1,0 +1,349 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+  height: 2000px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+}
+@font-face {
+  src: url("ProductSans-Regular.ttf");
+  font-family: "ProductSans";
+}
+.header {
+  background-color: red;
+  height: 70px;
+  width: auto;
+}
+.header-logo {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  float: left;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 2);
+  font-size: 38px;
+  margin-top: 15px;
+  margin-right: 12px;
+  padding-left: 20px;
+  padding-bottom: 5px;
+  font-family: "ProductSans";
+}
+.header-list li {
+  list-style: none;
+  float: right;
+  display: inline-block;
+  margin-left: 14px;
+  font-family: "ProductSans";
+  font-size: 25px;
+  margin: 5px;
+  margin-top: 23px;
+}
+.header-list a {
+  color: white;
+  margin-bottom: 17px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  transition: 0.5s ease-in;
+  padding: 3px;
+  position: relative;
+}
+.header-list a:hover {
+  text-decoration-color: maroon;
+  text-decoration: underline;
+  color: maroon;
+}
+.nav-others {
+  display: none;
+  min-width: 5px;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  margin-top: 10px;
+}
+.nav-others a {
+  color: white;
+  display: block;
+  top: 11px;
+  padding-top: 5px;
+  font-size: 20px;
+}
+.nav-others a:hover {
+  transition: ease-in;
+  text-decoration-color: maroon;
+  text-decoration: underline;
+  transition-duration: 30s;
+}
+.nav-lists:hover .nav-others {
+  display: block;
+  transition: ease-in;
+  transition-duration: 30s;
+}
+.our-products {
+  color: white;
+  font-family: "ProductSans";
+  text-shadow: 5px 3px 0px rgba(0, 0, 0, 2);
+  font-size: 24px;
+  padding-top: 55px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+/*Card Product*/
+.card-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  padding-bottom: 300px;
+}
+.card {
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-rows: 210px 95px 80px;
+  grid-template-areas: "image" "text" "stats";
+
+  font-family: "ProductSans";
+  border-radius: 18px;
+  background: #f0f0f0;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  margin: 40px;
+
+  transition: 0, 5s ease;
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.2);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
+.card-image-ow {
+  grid-area: image;
+  background: url("Air\ Jordan\ 1\ High\ Retro\ Off-White\ University\ Blue.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-position-x: -30px;
+  background-size: cover;
+  background-color: #f7786b;
+}
+.card-image-ht3 {
+  grid-area: image;
+  background: url("Air\ Jordan\ 1\ High\ Top\ 3.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-position-x: -30px;
+  background-size: cover;
+  background-color: #f7786b;
+}
+.card-image-hb {
+  grid-area: image;
+  background: url("Air\ Jordan\ 11\ High\ Bred\ 1000x600.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-position-x: -30px;
+  background-size: cover;
+  background-color: #f7786b;
+}
+.card-image-ybz {
+  grid-area: image;
+  background: url("Adidas\ Yeezy\ Boost.png");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-position-x: -30px;
+  background-size: cover;
+  background-color: #f7786b;
+}
+.card-image-asc {
+  grid-area: image;
+  background: url("Alat\ pembersih\ sepatu\ 1000x600.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-position-x: -30px;
+  background-size: cover;
+  background-color: #f7786b;
+}
+.card-image-rfyd {
+  grid-area: image;
+  background: url("Jasa\ pembersih\ sepatu\ 2\ 1000x600.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-position-x: -30px;
+  background-size: cover;
+  background-color: #f7786b;
+}
+.card-text {
+  grid-area: text;
+  margin: 25px;
+}
+.card-text .OW {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text .HT3 {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text .HT3 {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text .HB {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text .YBZ {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text .ASC {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text .RFYD {
+  color: grey;
+  font-size: 20px;
+  font-weight: 300;
+}
+.card-text li {
+  margin-top: 10px;
+  font-size: 18px;
+  list-style: none;
+}
+/*END Card Product*/
+
+.main {
+  background-color: rgb(192, 192, 192);
+  width: auto;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  height: 670px;
+  margin-bottom: 50px;
+}
+.img {
+  opacity: 40%;
+  transition: 0, 2s ease-in-out;
+  filter: blur(4px);
+  -webkit-filter: blur(3px);
+}
+
+.h1 {
+  font-family: "ProductSans";
+  font-weight: bold;
+  font-size: 65px;
+  text-shadow: 4px 6px 0px rgba(0, 0, 0, 1);
+  position: absolute;
+  position: center;
+  margin-bottom: 60px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.h2 {
+  font-family: "ProductSans";
+  font-size: 45px;
+  position: absolute;
+  margin-top: 55px;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.Aboutus a {
+  font-family: "ProductSans";
+  font-size: 25px;
+  background-color: red;
+  text-decoration: none;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  margin-top: 55px;
+  padding: 5px 10px 4px 10px;
+  top: 48%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+.Aboutus a:hover {
+  color: black;
+  transition: 0, 5s ease-in-out;
+}
+
+.Customers a {
+  font-family: "ProductSans";
+  font-size: 25px;
+  background-color: red;
+  text-decoration: none;
+  border-radius: 20px;
+  color: White;
+  position: absolute;
+  margin-top: 55px;
+  padding: 5px 10px 4px 10px;
+  top: 48%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+.Customers a:hover {
+  color: black;
+  transition: 0, 5s ease-in-out;
+}
+
+.footer {
+  background-color: red;
+  height: 159px;
+  width: auto;
+}
+
+.footer p {
+  font-family: "ProductSans";
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.footer-list {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-list li a {
+  color: white;
+  text-decoration: none;
+}
+.footer-list li {
+  float: right;
+  list-style: none;
+  font-family: "ProductSans";
+}
+.footer-list li img {
+  float: right;
+  list-style: none;
+  padding-right: 60px;
+  padding-top: 20px;
+  height: 30px;
+  width: auto;
+  transition: 0.5s ease-out;
+}
+
+.Register-account {
+  float: right;
+  color: white;
+  border: 10px;
+  border-radius: 5px;
+  background-color: darkgray;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  font-size: 15px;
+  font-family: "ProductSans";
+}
