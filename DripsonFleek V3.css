@@ -62,7 +62,7 @@ body {
   background-color: red;
   position: absolute;
   z-index: 1;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 .nav-others a {
   color: white;

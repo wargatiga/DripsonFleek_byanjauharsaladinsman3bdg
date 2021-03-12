@@ -9,6 +9,15 @@
     </head> 
 
     <body>
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('a.menu').click(function(){
+                    return false;
+                })
+            })
+        </script>
+
     <!--HEADERin dude-->
         <div class="header">
                 <a class="header-logo" href="DripsonFleek V3.html">Drips on Fleek</a>
@@ -36,6 +45,12 @@
                 <ul class="nav-lists">
                     <li>
                         <a href="#Our Products">Our Products</a>
+                    </li>
+                    <li>
+                        <a href="#Methods of Payment">Payment</a>
+                    </li>
+                    <li>
+                        <a href="#Social Media">Social Media</a>
                     </li>
                 </ul>
             </div>
@@ -148,7 +163,8 @@
 
 <!-- Footer -->
         <div class="footer">
-        <p><b style="font-size:35px; text-align:center;">Metode Pembayaran          |          Sosial Media</b></p>
+        <p><b style="font-size:35px; text-align:center;" id="Methods of Payment">Methods of Payment </b>
+            <b style="font-size:35px; text-align:center;" id="Social Media"> | Social Media</b></p>
             <div class="footer-list">
                 <ul>
                     <li>
