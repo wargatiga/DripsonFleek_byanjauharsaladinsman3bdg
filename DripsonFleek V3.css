@@ -243,7 +243,7 @@ body {
 .h1 {
   font-family: "ProductSans";
   font-weight: bold;
-  font-size: 65px;
+  font-size: 75px;
   text-shadow: 4px 6px 0px rgba(0, 0, 0, 1);
   position: absolute;
   position: center;
@@ -309,7 +309,7 @@ body {
   font-family: "ProductSans";
   color: white;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 20px;
 }
 
 .footer-list {
@@ -346,4 +346,476 @@ body {
   padding-left: 10px;
   font-size: 15px;
   font-family: "ProductSans";
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-color: red;
+    height: 50px;
+    width: auto;
+  }
+  .header-logo {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 2);
+    font-size: 23px;
+    margin-top: 12px;
+    margin-right: 12px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    font-family: "ProductSans";
+  }
+  .header-list li {
+    list-style: none;
+    float: right;
+    display: inline-block;
+    margin-left: 14px;
+    font-family: "ProductSans";
+    font-size: 10px;
+    margin: 5px;
+    margin-top: 19px;
+  }
+  .header-list a {
+    color: white;
+    margin-bottom: 17px;
+    margin-left: 4px;
+    margin-right: 4px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    padding: 3px;
+    position: relative;
+  }
+  .header-list a:hover {
+    text-decoration-color: maroon;
+    text-decoration: underline;
+    color: maroon;
+  }
+  .nav-others {
+    display: none;
+    min-width: 5px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    margin-top: 12px;
+  }
+  .nav-others li a {
+    padding: 10px;
+  }
+  .nav-others a {
+    color: white;
+    display: block;
+    top: 11px;
+    padding-top: 22px;
+    font-size: 10px;
+  }
+  .nav-others a:hover {
+    transition: ease-in;
+    text-decoration-color: maroon;
+    text-decoration: underline;
+    transition-duration: 30s;
+  }
+  .nav-lists:hover .nav-others {
+    display: block;
+    transition: ease-in;
+    transition-duration: 30s;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 250px;
+    margin-bottom: 50px;
+  }
+  .img {
+    opacity: 40%;
+    transition: 0, 2s ease-in-out;
+    filter: blur(4px);
+    -webkit-filter: blur(3px);
+  }
+
+  .h1 {
+    font-family: "ProductSans";
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: 4px 6px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    position: center;
+    margin-bottom: 60px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .h2 {
+    font-family: "ProductSans";
+    font-size: 24px;
+    position: absolute;
+    margin-top: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Aboutus a {
+    font-family: "ProductSans";
+    font-size: 13px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    margin-top: 22px;
+    padding: 5px 10px 4px 10px;
+    top: 57%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+  .Aboutus a:hover {
+    color: black;
+    transition: 0, 5s ease-in-out;
+  }
+
+  .Customers a {
+    font-family: "ProductSans";
+    font-size: 13px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 20px;
+    color: White;
+    position: absolute;
+    margin-top: 22px;
+    padding: 5px 10px 4px 10px;
+    top: 57%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .Customers a:hover {
+    color: black;
+    transition: 0, 5s ease-in-out;
+  }
+  .our-products {
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 20px;
+  }
+  .card-container {
+    padding-bottom: 4000px;
+  }
+  .footer {
+    height: 159px;
+  }
+
+  .footer p {
+    font-size: 19px;
+    padding-top: 35px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .footer-list li img {
+    padding-right: 10px;
+    padding-top: 13px;
+    height: 20px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 610px) {
+  .header {
+    background-color: red;
+    height: 65px;
+    width: auto;
+  }
+  .header-logo {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 2);
+    font-size: 28px;
+    margin-top: 19px;
+    margin-right: 5px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    font-family: "ProductSans";
+  }
+  .header-list {
+    margin-top: 2px;
+  }
+  .nav-lists {
+    margin-top: 1px;
+  }
+  .nav-lists li {
+    list-style: none;
+    float: right;
+    display: inline-block;
+    font-family: "ProductSans";
+  }
+  .nav-lists li a {
+    margin-left: 3px;
+    font-size: 19px;
+  }
+  .nav-others {
+    display: none;
+    min-width: 5px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    margin-top: 12px;
+  }
+  .nav-others a {
+    color: white;
+    display: block;
+    top: 11px;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 670px;
+    margin-bottom: 50px;
+  }
+  .img {
+    opacity: 40%;
+    transition: 0, 2s ease-in-out;
+    filter: blur(4px);
+    -webkit-filter: blur(3px);
+  }
+
+  .h1 {
+    font-family: "ProductSans";
+    font-weight: bold;
+    font-size: 60px;
+    text-shadow: 4px 6px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    position: center;
+    margin-bottom: 60px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .h2 {
+    font-family: "ProductSans";
+    font-size: 45px;
+    position: absolute;
+    margin-top: 55px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Aboutus a {
+    font-family: "ProductSans";
+    font-size: 25px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    margin-top: 55px;
+    padding: 5px 10px 4px 10px;
+    top: 48%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Customers a {
+    font-family: "ProductSans";
+    font-size: 25px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 20px;
+    color: White;
+    position: absolute;
+    margin-top: 55px;
+    padding: 5px 10px 4px 10px;
+    top: 48%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .our-products {
+    font-size: 27px;
+    padding-top: 280px;
+    padding-bottom: 12px;
+  }
+
+  .card-container {
+    padding-bottom: 3000px;
+  }
+
+  .footer {
+    height: 159px;
+  }
+  .footer p {
+    font-size: 27px;
+    padding-top: 26px;
+    padding-right: 10px;
+    text-align: center;
+  }
+  .footer-list li img {
+    padding-top: 16px;
+    height: 18px;
+    padding-right: 20px;
+    padding-left: 28px;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .header {
+    background-color: red;
+    height: 70px;
+    width: auto;
+  }
+  .header-logo {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    float: left;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 2);
+    font-size: 38px;
+    margin-top: 15px;
+    margin-right: 12px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-family: "ProductSans";
+  }
+  .header-list {
+    font-size: 28px;
+  }
+  .header-list li {
+    list-style: none;
+    float: right;
+    display: inline-block;
+    margin-left: 20px;
+    font-family: "ProductSans";
+    font-size: 28px;
+    margin: 5px;
+    margin-top: 18px;
+  }
+  .header-list a {
+    color: white;
+    margin-bottom: 17px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    transition: 0.5s ease-in;
+    padding: 3px;
+    position: relative;
+  }
+
+  .nav-others {
+    display: none;
+    min-width: 5px;
+    background-color: red;
+    position: absolute;
+    z-index: 1;
+    margin-top: 12px;
+  }
+  .nav-others a {
+    color: white;
+    display: block;
+    top: 11px;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 670px;
+    margin-bottom: 50px;
+  }
+  .img {
+    opacity: 40%;
+    transition: 0, 2s ease-in-out;
+    filter: blur(4px);
+    -webkit-filter: blur(3px);
+  }
+
+  .h1 {
+    font-family: "ProductSans";
+    font-weight: bold;
+    font-size: 75px;
+    text-shadow: 4px 6px 0px rgba(0, 0, 0, 1);
+    position: absolute;
+    position: center;
+    margin-bottom: 60px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .h2 {
+    font-family: "ProductSans";
+    font-size: 55px;
+    position: absolute;
+    margin-top: 55px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Aboutus a {
+    font-family: "ProductSans";
+    font-size: 25px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+    position: absolute;
+    margin-top: 55px;
+    padding: 5px 10px 4px 10px;
+    top: 48%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  .Customers a {
+    font-family: "ProductSans";
+    font-size: 25px;
+    background-color: red;
+    text-decoration: none;
+    border-radius: 20px;
+    color: White;
+    position: absolute;
+    margin-top: 55px;
+    padding: 5px 10px 4px 10px;
+    top: 48%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+  .our-products {
+    color: white;
+    font-family: "ProductSans";
+    text-shadow: 5px 3px 0px rgba(0, 0, 0, 2);
+    font-size: 24px;
+    padding-top: 55px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .card-container {
+    padding-bottom: 1000px;
+  }
+
+  .footer {
+    background-color: red;
+    height: 159px;
+    width: auto;
+  }
+
+  .footer p {
+    font-size: 38px;
+    padding-top: 30px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .footer-list li img {
+    float: right;
+    list-style: none;
+    padding-right: 45px;
+    padding-top: 18px;
+    height: 25px;
+    width: auto;
+    transition: 0.5s ease-out;
+  }
 }
